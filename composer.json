@@ -1,0 +1,16 @@
+{
+    "name": "hexlet/code",
+    "description": "train",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dzadorin",
+            "email": "zadorin7zadorin@yandex.ru"
+        }
+    ],
+    "require": {}
+}
