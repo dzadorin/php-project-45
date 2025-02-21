@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+
+<?php
+require_once '/home/developer/php-project-45/src/even.php';
