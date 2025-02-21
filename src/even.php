@@ -2,6 +2,8 @@
 
 namespace BrainGames\even;
 
+include 'Cli.php';
+
 use function cli\line;
 use function cli\prompt;
 
