@@ -3,9 +3,6 @@
     "description": "train",
     "license": "MIT",
     "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        },
 	"files": [
 	     "src/Cli.php",
              "src/Even.php"
