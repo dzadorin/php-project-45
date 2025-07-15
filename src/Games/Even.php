@@ -6,9 +6,7 @@ use function cli\prompt;
 function isEven() {
     $countIteration = 3;
     $flag = true;
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, {$name}");
+    $name = hello();
     line('Answer "yes" if the number is even, otherwise answer "no".');
 
     while($flag && $countIteration > 0) {
