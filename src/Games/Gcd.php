@@ -3,13 +3,14 @@
 use function cli\line;
 use function cli\prompt;
 
-function gcd() {
+function gcd()
+{
     $countIteration = 3;
     $flag = true;
     $name = hello();
     line('Find the greatest common divisor of given numbers.');
 
-    while($flag && $countIteration > 0) {
+    while ($flag && $countIteration > 0) {
         $randomNumOne = mt_rand(1, 100);
         $randomNumTwo = mt_rand(1, 100);
         $answer = prompt("Question: {$randomNumOne} {$randomNumTwo}");
@@ -23,7 +24,6 @@ function gcd() {
         } else {
             break;
         }
-
     }
 
     if ($flag) {
@@ -33,7 +33,8 @@ function gcd() {
     }
 }
 
-function gcdIteration(&$randomNumOne, &$randomNumTwo, &$name, &$answer, &$flag) {
+function gcdIteration(&$randomNumOne, &$randomNumTwo, &$name, &$answer, &$flag)
+{
     $a = $randomNumOne;
     $b = $randomNumTwo;
 

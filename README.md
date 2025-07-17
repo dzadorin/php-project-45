@@ -21,6 +21,7 @@
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dzadorin_php-project-45&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=dzadorin_php-project-45)
 
- https://asciinema.org/a/lgq3VvmcSMhMuw7mAUzAzxyNQ - Аскинема Четного числа
- https://asciinema.org/a/r7o6anCkoLrLgpRZ7vWY1SXCe - Аскинема Калькулятора
- https://asciinema.org/a/JaFqyTUBjo938Wjew2X3auaCN - Аскинема НОД
+ https://asciinema.org/a/lgq3VvmcSMhMuw7mAUzAzxyNQ - Аскинема Четного числа  
+ https://asciinema.org/a/r7o6anCkoLrLgpRZ7vWY1SXCe - Аскинема Калькулятора  
+ https://asciinema.org/a/JaFqyTUBjo938Wjew2X3auaCN - Аскинема НОД  
+ https://asciinema.org/a/SxyliMTXLdkeJOLDydVcmtwBT - Аскинема Прогрессии  

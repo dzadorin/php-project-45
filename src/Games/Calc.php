@@ -3,17 +3,18 @@
 use function cli\line;
 use function cli\prompt;
 
-function Calc() {
+function Calc()
+{
     $countIteration = 3;
     $flag = true;
     $name = hello();
     line('What is the result of the expression?');
 
-    while($flag && $countIteration > 0) {
+    while ($flag && $countIteration > 0) {
         $firstNum = mt_rand(1, 100);
-	$secondNum = mt_rand(1, 100);
-	$symbols = ['+', '-', '*'];
-	$randSymbol = mt_rand(0, 2);
+        $secondNum = mt_rand(1, 100);
+        $symbols = ['+', '-', '*'];
+        $randSymbol = mt_rand(0, 2);
         $answer = prompt("Question: {$firstNum} {$symbols[$randSymbol]} {$secondNum}");
         line("Your answer: %s", $answer);
 
@@ -34,8 +35,8 @@ function Calc() {
     }
 }
 
-function iterationCalc(&$firstNum, &$secondNum, &$randSymbol, &$name, &$answer, &$flag) {
-
+function iterationCalc(&$firstNum, &$secondNum, &$randSymbol, &$name, &$answer, &$flag)
+{
     switch ($randSymbol) {
         case 0:
             $correctAnswer = $firstNum + $secondNum;

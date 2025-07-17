@@ -3,20 +3,21 @@
 use function cli\line;
 use function cli\prompt;
 
-function isEven() {
+function isEven()
+{
     $countIteration = 3;
     $flag = true;
     $name = hello();
     line('Answer "yes" if the number is even, otherwise answer "no".');
 
-    while($flag && $countIteration > 0) {
-	$randomNum = mt_rand(1, 100);
-	$answer = prompt("Question {$randomNum}");
-	line("Your answer: %s", $answer);
+    while ($flag && $countIteration > 0) {
+        $randomNum = mt_rand(1, 100);
+        $answer = prompt("Question {$randomNum}");
+        line("Your answer: %s", $answer);
 
-	iteration($randomNum, $name, $answer, $flag);
+        iteration($randomNum, $name, $answer, $flag);
 
-	if ($flag) {
+        if ($flag) {
             line("Correct!");
             $countIteration--;
         } else {
@@ -31,7 +32,8 @@ function isEven() {
     }
 }
 
-function iteration(&$randomNum, &$name, &$answer, &$flag) {
+function iteration(&$randomNum, &$name, &$answer, &$flag)
+{
     if (($answer === 'yes' && $randomNum % 2 === 0) || ($answer === 'no' && $randomNum % 2 !== 0)) {
         return;
     } else {
